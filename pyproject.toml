@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "precalculate"
+description-file = "README.md"
+requires-python = ">=3.5"
+requires = [
+]
+author = "Itamar Turner-Trauring"
+author-email = "itamar@itamarst.org"
+home-page = "https://github.com/itamarst/precalculate"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    'License :: OSI Approved :: Apache Software License',
+]
+
+[tool.flit.metadata.requires-extra]
+test = [
+    "pytest",
+    "flake8",
+]
